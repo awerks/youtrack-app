@@ -3,13 +3,12 @@
   "title": "You track",
   "description": "Internship task",
   "$schema": "https://json.schemastore.org/youtrack-app.json",
+  "url": "https://github.com/awerks/youtrack-app",
   "vendor": {
-    "name": "awerks",
-    "url": ""
+    "name": "awerks"
   },
   "icon": "icon.svg",
   "widgets": [
-
     {
       "key": "sample-widget",
       "name": "Sample-Widget",
@@ -17,7 +16,11 @@
       "extensionPoint": "MAIN_MENU_ITEM",
       "iconPath": "sample-widget/widget-icon.svg",
       "description": "Main menu item",
-      "permissions": []
+      "permissions": [],
+      "expectedDimensions": {
+        "height": 40,
+        "width": 150
+      }
     }
   ]
 }

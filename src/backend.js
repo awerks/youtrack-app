@@ -7,7 +7,7 @@ exports.httpHandler = {
         // See https://www.jetbrains.com/help/youtrack/devportal-apps/apps-reference-http-handlers.html#request
         const requestParam = ctx.request.getParameter('test');
         // See https://www.jetbrains.com/help/youtrack/devportal-apps/apps-reference-http-handlers.html#response
-        ctx.response.json({test: requestParam});
+        ctx.response.json({ test: requestParam });
       }
     }
   ]

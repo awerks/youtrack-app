@@ -4,3 +4,20 @@
   gap: calc(var(--ring-unit) * 2);
   margin: calc(var(--ring-unit) / 2);
 }
+
+.project-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.project-table-header {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.project-table-cell {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
