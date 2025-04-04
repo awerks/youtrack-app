@@ -1,0 +1,23 @@
+{
+  "name": "my-app",
+  "title": "You track",
+  "description": "Internship task",
+  "$schema": "https://json.schemastore.org/youtrack-app.json",
+  "vendor": {
+    "name": "awerks",
+    "url": ""
+  },
+  "icon": "icon.svg",
+  "widgets": [
+
+    {
+      "key": "sample-widget",
+      "name": "Sample-Widget",
+      "indexPath": "sample-widget/index.html",
+      "extensionPoint": "MAIN_MENU_ITEM",
+      "iconPath": "sample-widget/widget-icon.svg",
+      "description": "Main menu item",
+      "permissions": []
+    }
+  ]
+}
