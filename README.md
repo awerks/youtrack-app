@@ -5,6 +5,10 @@ This project implements a YouTrack widget that displays a list of projects and p
 - A vanilla TypeScript implementation (see `src/widgets/sample-widget/index.ts`).
 - A React-based implementation (see `src/widgets/sample-widget/app.tsx`). (With Ring UI components)
 
+# Screenshot
+
+![YouTrack Widget Screenshot](screenshots/image.png)
+
 ## Project Structure
 
 ```

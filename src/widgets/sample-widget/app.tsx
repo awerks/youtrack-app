@@ -96,7 +96,7 @@ const AppComponent: React.FunctionComponent = () => {
         </div>
         <div className="toggle-section">
           <Button primary onClick={handleToggle} className='btn'>
-            Toggle Content
+            Toggle boolean
           </Button>
           {toggleMessage && (
             <div className="toggle-content">
