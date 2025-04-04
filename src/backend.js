@@ -1,14 +1,20 @@
 exports.httpHandler = {
-  endpoints: [
-    {
-      method: 'GET',
-      path: 'debug',
-      handle: function handle(ctx) {
-        // See https://www.jetbrains.com/help/youtrack/devportal-apps/apps-reference-http-handlers.html#request
-        const requestParam = ctx.request.getParameter('test');
-        // See https://www.jetbrains.com/help/youtrack/devportal-apps/apps-reference-http-handlers.html#response
-        ctx.response.json({ test: requestParam });
-      }
-    }
-  ]
+    endpoints: [
+        {
+            method: 'POST',
+            path: '/toggleBooleanSetting',
+            scope: 'global',
+            handle: function handle(ctx) {
+                try {
+
+                    ctx.response.code = 200;
+                    ctx.globalStorage.extensionProperties.booleanSetting = !ctx.globalStorage.extensionProperties.booleanSetting;
+                    ctx.response.json({ success: true, value: ctx.globalStorage.extensionProperties.booleanSetting });
+                } catch (error) {
+                    ctx.response.code = 500;
+                    ctx.response.json({ error: error.message });
+                }
+            }
+        }
+    ]
 };

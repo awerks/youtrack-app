@@ -24,3 +24,9 @@ export interface User {
   banned: boolean;
   avatarUrl: string;
 }
+
+export interface ToggleBooleanSettingResponse {
+  success?: boolean;
+  error?: string;
+  value: boolean;
+}

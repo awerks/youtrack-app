@@ -2,28 +2,23 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="app.css">
-  <title>Current projects</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="app.css">
+  <title>Current projects</title>
 </head>
 
 <body>
-  <header>
-    <h1>View your current projects</h1>
-  </header>
 
   <main>
     <div id="root" class="widget"></div>
-    <button id="toggleButton">Toggle Content</button>
-    <div id="toggleContent" style="display: none;">
+
+    <div id="toggle-content" style="display: none;" class="toggle-content">
       <p>This is the toggled content!</p>
     </div>
   </main>
 
-  <script type="module" src="index.ts"></script>
-
-  </script>
+  <script type="module" src="index.tsx"></script>
 </body>
 
 </html>

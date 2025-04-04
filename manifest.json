@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "title": "You track",
+  "title": "Current projects",
   "description": "Internship task",
   "$schema": "https://json.schemastore.org/youtrack-app.json",
   "url": "https://github.com/awerks/youtrack-app",
